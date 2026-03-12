@@ -13,60 +13,58 @@
 </head>
 <body>
  
-   <nav class="w-full bg-white px-[300px] py-4 flex items-center justify-between text-[18px]">
- 
-  <div class="flex-shrink-0">
-    <img src="./image/Logo.png" alt="Logo" class="h-10 w-auto">
-  </div>
+  <nav class=" flex px-6 sm:px-12 py-4 sm:py-6 sm:flex-col  ">
 
-
-  <div class="flex items-center space-x-6">
-
-    <ul class="hidden md:flex space-x-6 text-gray-700 font-medium ">
+    <!-- Logo -->
+    <div class="flex-shrink-0">
+      <img src="./image/Logo.png" alt="Logo" class="h-5 sm:h-8 w-auto sm:left-4">
+    </div>
+    <div class="sm:flex sm:items-center sm:justify-between w-full">
+    <!-- Menu -->
+    <ul class="hidden sm:flex sm:text-sm sm:space-x-6 text-gray-700 font-bold">
       <li><a href="#" class="hover:text-blue-600 transition">Home</a></li>
       <li><a href="#" class="hover:text-blue-600 transition">About Us</a></li>
       <li><a href="#" class="hover:text-blue-600 transition">Our App</a></li>
       <li><a href="#" class="hover:text-blue-600 transition">Contacts</a></li>
     </ul>
-
-    
-  </div>
- 
-    <div class="flex space-x-4">
-      <a href="#" class="px-4 py-2 text-gray-700 font-medium hover:text-white hover:bg-blue-600 rounded transition">Log in</a>
+  
+    <!-- Buttons -->
+    <div class="hidden md:flex space-x-4">
+      <a href="#" class="px-4 py-2 text-gray-700 border-2 border-gray-300 font-medium hover:text-white hover:bg-blue-600 rounded transition">Log in</a>
       <a href="#" class="px-4 py-2 text-white bg-orange-600 font-medium hover:bg-blue-700 rounded transition">Sign up</a>
     </div>
-
-
-  <div class="md:hidden">
-    <button class="text-gray-700 focus:outline-none">
-     
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-          d="M4 6h16M4 12h16M4 18h16"></path>
-      </svg>
-    </button>
   </div>
-</nav>
+  
+    <!-- Mobile Menu Button -->
+    <div class="md:hidden">
+      <button class="text-gray-700">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  
+  </nav>
  
-<section class="hero flex  px-[300px]  h-[650px] ">
-  <div class=" Hero_text mt-32">
-    <h1 >
+<section class="hero flex px-6  sm:px-12 relative">
+  <div class=" Hero_text mt-4">
+    <h1 class="text-[20px] leading-[20px]  sm:text-[45px] sm:leading-[60px] font-medium">
       We boost <br>
       growth for your <br>statup business
     </h1>
-    <div class="mt-8 w-[555px] text-[22px]">
+    <div class="mt-4 max-w-[200px] sm:max-w-[350px] text-[8px] sm:text-[14px] sm:leading-[20px] text-gray-500">
       <p >Our goal is top at the heart of creativity services industry as a digital creator. In has a after comment</p>
     </div>
 
     <div class="mt-8 flex gap-4">
-           <div class="w-[162px] h-[50px] bg-orange-500 rounded-md flex justify-center items-center hover:bg-orange-600 transition">
-             <a href="#" class="text-white font-medium">
+           <div class="max-w-[162px] sm:max-w-auto   p-2 px-2 bg-orange-500 rounded-md flex justify-center items-center hover:bg-orange-600 transition">
+             <a href="#" class="text-white text-center text-[12px] sm:text-[20px] font-medium">
                Get Started
              </a>
          </div>
-         <a href="#" class="flex items-center gap-2 text-gray-500 font-medium hover:underline">
-             <img src="./image/Learn More icon.png" alt="Learn More" class="w-[50px] h-[60px]">
+         <a href="#" class="flex items-center gap-2 text-gray-500 text-[12px] sm:text-[20px] hover:underline">
+             <img src="./image/Learn More icon.png" alt="Learn More" class="w-[25px] sm:w-[30px]">
              Learn More
          </a>
     </div>
@@ -74,183 +72,209 @@
   </div>
   <div>
     <img 
-    class="hero_img w-[950px]"
+    class="absolute right-2 w-[250px] sm:w-[350px] md:w-[450px] lg:w-[550px] sm:right-0 sm:top-2"
     src="./image/Group 32.png" alt="">
   </div>
 
 </section>
 
 
-<section class="service flex items-center justify-center pt-8">
-  <div class="">
+<section class="service flex justify-center pt-12 px-6 md:px-20 lg:px-32">
+
+  <div class="w-full max-w-7xl">
+
+    <!-- Heading -->
     <div>
-      <h1 class="text-center text-[14px] tracking-[0.3em] text-gray-500">SERVICE</h1>
-      <h1 class="text-center text-[52px]">Our Vison & Our Goal</h1>
+      <h1 class="text-center text-[14px] sm:text-[20px] font-medium tracking-[0.3em] text-gray-500">
+        SERVICE
+      </h1>
+      <h1 class="text-center text-[28px] sm:text-[40px] mt-2 font-semibold">
+        Our Vision & Our Goal
+      </h1>
     </div>
-    <div class="mt-20 flex gap-32">
-          <div class="card mt-12 h-[508px] w-[350px] rounded-[20px]  flex flex-col items-center justify-center bg-white p-12 gap-8">
-      <div class=" justify-center items-center h-[76px] w-[76px] ">
-        <img src="./image/Activity.png" alt="">
-      </div>
-      <div class=" flex flex-col items-center justify-cebter gap-8">
-           <h1 class="text-[30px] text-center">Graphic Design</h1>
-           <p class="text-center">Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Quisque dui mi, bibendum eu erat id, ultricies semper metus. 
-            Nunc dapibus laoreet dolor nec imperdiet.
-          </p>
-           <div class="w-[162px] h-[50px] bg-orange-500 rounded-md flex  justify-center items-center hover:bg-orange-600 transition">
-             <a href="#" class="text-white font-medium">
-               Learn More
-             </a>
-         </div>
-      </div>
-          </div>
 
-          <div class="card mt-12 h-[508px] w-[350px] rounded-[20px]  flex flex-col items-center justify-center bg-white p-12 gap-8">
-      <div class=" justify-center items-center h-[76px] w-[76px] ">
-        <img src="./image/Vector.png" alt="">
-      </div>
-      <div class=" flex flex-col items-center justify-cebter gap-8">
-           <h1 class="text-[30px] text-center">Video Editing</h1>
-           <p class="text-center">Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Quisque dui mi, bibendum eu erat id, ultricies semper metus. 
-            Nunc dapibus laoreet dolor nec imperdiet.
-          </p>
-           <div class="w-[162px] h-[50px] bg-orange-500 rounded-md flex  justify-center items-center hover:bg-orange-600 transition">
-             <a href="#" class="text-white font-medium">
-               Learn More
-             </a>
-         </div>
-      </div>
-          </div>
+    <!-- Cards -->
+    <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-          <div class="card mt-12 h-[508px] w-[350px] rounded-[20px]  flex flex-col items-center justify-center bg-white p-12 gap-8">
-      <div class=" justify-center items-center h-[76px] w-[76px] ">
-        <img src="./image/Chart.png" alt="">
-      </div>
-      <div class=" flex flex-col items-center justify-cebter gap-8">
-           <h1 class="text-[30px] text-center">Digital Marketing</h1>
-           <p class="text-center">Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Quisque dui mi, bibendum eu erat id, ultricies semper metus. 
-            Nunc dapibus laoreet dolor nec imperdiet.
-          </p>
-           <div class="w-[162px] h-[50px] bg-orange-500 rounded-md flex  justify-center items-center hover:bg-orange-600 transition">
-             <a href="#" class="text-white font-medium">
-               Learn More
-             </a>
-         </div>
-      </div>
-          </div>
-    </div>      
+      <!-- Card 1 -->
+      <div style="box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 20px 19px rgba(0, 0, 0, 0.1);" class="rounded-[20px] flex flex-col items-center bg-white p-10 gap-6 shadow-sm">
 
+        <img class="h-[76px] w-[76px]" src="./image/Activity.png" alt="">
+
+        <h1 class="text-[26px] text-center font-semibold">
+          Graphic Design
+        </h1>
+
+        <p class="text-center text-gray-500">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Quisque dui mi, bibendum eu erat id.
+        </p>
+
+        <a href="#" class="px-6 py-3 bg-orange-500 text-white rounded-md hover:bg-orange-600 transition">
+          Learn More
+        </a>
+
+      </div>
+
+      <!-- Card 2 -->
+      <div style="box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 20px 19px rgba(0, 0, 0, 0.1);" class="rounded-[20px] flex flex-col items-center bg-white p-10 gap-6 shadow-sm"">
+
+        <img class="h-[76px] w-[76px]" src="./image/Vector.png" alt="">
+
+        <h1 class="text-[26px] text-center font-semibold">
+          Video Editing
+        </h1>
+
+        <p class="text-center text-gray-500">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Quisque dui mi, bibendum eu erat id.
+        </p>
+
+        <a href="#" class="px-6 py-3 bg-orange-500 text-white rounded-md hover:bg-orange-600 transition">
+          Learn More
+        </a>
+
+      </div>
+
+      <!-- Card 3 -->
+      <div style="box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 20px 19px rgba(0, 0, 0, 0.1);" class="rounded-[20px] flex flex-col items-center bg-white p-10 gap-6 shadow-sm"">
+
+        <img class="h-[76px] w-[76px]" src="./image/Chart.png" alt="">
+
+        <h1 class="text-[26px] text-center font-semibold">
+          Digital Marketing
+        </h1>
+
+        <p class="text-center text-gray-500">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Quisque dui mi, bibendum eu erat id.
+        </p>
+
+        <a href="#" class="px-6 py-3 bg-orange-500 text-white rounded-md hover:bg-orange-600 transition">
+          Learn More
+        </a>
+
+      </div>
+
+    </div>
 
   </div>
+
 </section>
 
 
-<section class=" flex px-[300px] mt-32 justify-between">
-  <div class="w-2/5">
-    <h1 class="section_h1 text-[22px] mt-2">Many Blocks and <br>Components</h1>
-    <div class="w-[340px] mt-4">
-      <p class="text-[16px] text-gray-400">Startup Framework contains components and complex blocks which can easily be integrated into almost any design. </p>
+<section class="flex flex-col md:flex-row px-6 md:px-20 lg:px-32 mt-20 items-center justify-between gap-10">
+
+  <!-- Text Area -->
+  <div class="text-center md:text-left ">
+    <h1 class="text-2xl text-gray-700 md:text-[20px] font-bold mt-2">
+      Many Blocks and <br>Components
+    </h1>
+
+    <div class="max-w-[400px] mt-4">
+      <p class="text-gray-600">
+        Startup Framework contains components and complex blocks which can easily be integrated into almost any design.
+      </p>
     </div>
-    <div class="mt-32 w-[132px] h-[48px] border border-gray-200 rounded-[20px] flex flex-col items-center justify-center">
-      <a href="" class="text-center">Explore</a>
+
+    <div class="mt-10 sm:mt-8 max-w-full sm:max-w-[150px] border-4 border-gray-300 rounded-md sm:rounded-full p-3 px-6 sm:px-2 text-center">
+      <a href="#" class="sm:text-[18px] no-underline hover:underline">
+        Explore
+      </a>
     </div>
   </div>
-  <div>
-    <img src="./image/Chair.png" alt="">
+
+  <!-- Image -->
+  <div class="max-w-full">
+    <img class="cover sm:w-[700px] lg:w-72" src="./image/Chair.png" alt="">
   </div>
+
 </section>
 
 
-<section class="service flex items-center justify-center mt-32">
-  <div class="">
+<section class="service flex justify-center mt-20 px-6 md:px-20 lg:px-32">
+
+  <div class="w-full max-w-7xl flex flex-col gap-12">
+
+    <!-- Heading -->
     <div>
-      <h1 class="text-center text-[14px] tracking-[0.3em] text-gray-500">TESTMONIALS</h1>
-      <h1 class="text-center text-[52px]">What Clients say about us</h1>
+      <h1 class="text-center text-[14px] sm:text-[18px] tracking-[0.3em] text-gray-500">
+        TESTIMONIALS
+      </h1>
+      <h1 class="text-center text-[25px] md:text-[30px] font-semibold mt-2">
+        What Clients Say About Us
+      </h1>
     </div>
-    <div class="mt-20 grid grid-cols-2 gap-8">
 
-      <div class="flex gap-4 p-4 w-[470px]  rounded-lg">
+    <!-- Testimonial Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 justify-items-center">
 
-        <div class="w-[60px] h-[60px] flex-shrink-0">
-          <img class="w-full h-full object-cover rounded " src="./image/man/Userpic.png" alt="">
+      <!-- Card 1 -->
+      <div class="flex flex-col md:flex-row gap-4 p-6 w-full max-w-md bg-white rounded-lg shadow-md">
+        <div class="w-16 h-16 flex-shrink-0">
+          <img class="w-full h-full object-cover rounded-full" src="./image/man/Userpic.png" alt="Rayhan Curran">
         </div>
-
-        <div>
-          <p class="text-gray-800">
+        <div class="flex flex-col justify-center gap-2">
+          <p class="text-gray-800 text-sm md:text-base">
             Get a fully retina ready site when you build with Startup Framework.
-            Websites look sharper and more gorgeous on devices with retina display support
+            Websites look sharper and more gorgeous on devices with retina display support.
           </p>
-
-          <h1 class=" mt-4 tracking-[0.3em] text-gray-400">Rayhan Curran</h1>
+          <h1 class="mt-2 tracking-[0.2em] text-gray-400 font-medium">Rayhan Curran</h1>
         </div>
-
       </div>
 
-      <div class="flex gap-4 p-4 w-[470px]  rounded-lg">
-
-        <div class="w-[60px] h-[60px] flex-shrink-0">
-          <img class="w-full h-full object-cover rounded " src="./image/man/Mask.png" alt="">
+      <!-- Card 2 -->
+      <div class="flex flex-col md:flex-row gap-4 p-6 w-full max-w-md bg-white rounded-lg shadow-md">
+        <div class="w-16 h-16 flex-shrink-0">
+          <img class="w-full h-full object-cover rounded-full" src="./image/man/Mask.png" alt="Kayley Frame">
         </div>
-
-        <div>
-          <p class="text-gray-800">
+        <div class="flex flex-col justify-center gap-2">
+          <p class="text-gray-800 text-sm md:text-base">
             As a business targeting high net worth individuals, we were looking 
-            for a slick, cool and mini-malistic design for our website
+            for a slick, cool and minimalistic design for our website.
           </p>
-
-          <h1 class=" mt-4 tracking-[0.3em] text-gray-400">Kayley Frame</h1>
+          <h1 class="mt-2 tracking-[0.2em] text-gray-400 font-medium">Kayley Frame</h1>
         </div>
-
       </div>
 
-      <div class="flex gap-4 p-4 w-[470px]  rounded-lg">
-
-        <div class="w-[60px] h-[60px] flex-shrink-0">
-          <img class="w-full h-full object-cover rounded " src="./image/man/Userpic-1.png" alt="">
+      <!-- Card 3 -->
+      <div class="flex flex-col md:flex-row gap-4 p-6 w-full max-w-md bg-white rounded-lg shadow-md">
+        <div class="w-16 h-16 flex-shrink-0">
+          <img class="w-full h-full object-cover rounded-full" src="./image/man/Userpic-1.png" alt="Gene Whitfield">
         </div>
-
-        <div>
-          <p class="text-gray-800">
-            The most important part of the Startup Framework is the samples
+        <div class="flex flex-col justify-center gap-2">
+          <p class="text-gray-800 text-sm md:text-base">
+            The most important part of the Startup Framework is the samples.
           </p>
-
-          <h1 class=" mt-4 tracking-[0.3em] text-gray-400">Gene Whitfield</h1>
+          <h1 class="mt-2 tracking-[0.2em] text-gray-400 font-medium">Gene Whitfield</h1>
         </div>
-
       </div>
 
-      <div class="flex gap-4 p-4 w-[470px]  rounded-lg">
-
-        <div class="w-[60px] h-[60px] flex-shrink-0">
-          <img class="w-full h-full object-cover rounded " src="./image/man/Userpic-2.png" alt="">
+      <!-- Card 4 -->
+      <div class="flex flex-col md:flex-row gap-4 p-6 w-full max-w-md bg-white rounded-lg shadow-md">
+        <div class="w-16 h-16 flex-shrink-0">
+          <img class="w-full h-full object-cover rounded-full" src="./image/man/Userpic-2.png" alt="Allan Kim">
         </div>
-
-        <div>
-          <p class="text-gray-800">
-            I’ve built my website with Startup just in one day, and it was ready-to-go. 
+        <div class="flex flex-col justify-center gap-2">
+          <p class="text-gray-800 text-sm md:text-base">
+            I’ve built my website with Startup just in one day, and it was ready-to-go.
           </p>
-
-          <h1 class=" mt-4 tracking-[0.3em] text-gray-400">Allan Kim</h1>
+          <h1 class="mt-2 tracking-[0.2em] text-gray-400 font-medium">Allan Kim</h1>
         </div>
-
       </div>
 
-</div>
-       
-
+    </div>
 
   </div>
+
 </section>
 
-<section class="mt-32">
+<section class="mt-12 px-12">
       <div>
           <h1 class="text-center text-[14px] tracking-[0.3em] text-gray-500">OUR TEAM</h1>
-          <h1 class="text-center text-[52px]">Meet The Team</h1>
+          <h1 class="text-center text-[25px]">Meet The Team</h1>
     </div>
-     <div class=" mt-12 flex gap-12 items-center justify-center ">
+     <div class=" mt-8 grid grid-cols-1 sm:grid-cols-2 gap-12 items-center justify-items-center ">
 
         <div class="w-[320px] bg-white rounded-2xl shadow-md border">
         
@@ -342,34 +366,39 @@
 </section>
 
 
-<section class="mt-32">
+<section class="mt-12 px-6 md:px-20 lg:px-32">
 
+  <!-- Heading -->
   <div>
-          <h1 class="text-center text-[14px] tracking-[0.3em] text-gray-500">OUR TEAM</h1>
-          <h1 class="text-center text-[52px]">Meet The Team</h1>
-    </div>
-  <div class="flex items-center justify-center mt-12 ">
+    <h1 class="text-center text-[14px] tracking-[0.3em] text-gray-500">
+      OUR TEAM
+    </h1>
+    <h1 class="text-center text-[25px] md:text-[52px] font-semibold mt-2">
+      Meet The Team
+    </h1>
+  </div>
 
-  <div class="flex items-center gap-16 max-w-5xl">
+  <!-- Content Wrapper -->
+  <div class="flex flex-col md:flex-row items-center justify-center mt-12 gap-12">
 
     <!-- Image -->
-    <div>
-      <img class="w-[421px]" src="./image/Frame.png" alt="mail">
+    <div class="w-full md:w-1/2 flex justify-center">
+      <img class="w-[200px] max-w-md md:max-w-lg" src="./image/Frame.png" alt="Team Image">
     </div>
 
-    <!-- Content -->
-    <div class="max-w-[700px]">
+    <!-- Text & Newsletter -->
+    <div class="w-full md:w-1/2 max-w-lg flex flex-col gap-6">
 
-      <p class="text-gray-600 mb-6">
+      <p class="text-gray-600 text-sm md:text-base">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
       </p>
 
       <!-- Input -->
       <input 
         type="email" 
         placeholder="Your E-mail here..."
-        class="w-full px-6 py-4 rounded-full shadow-md outline-none mb-6"
+        class="w-full px-6 py-4 rounded-full shadow-md outline-none"
       >
 
       <!-- Button -->
@@ -382,16 +411,15 @@
 
   </div>
 
-</div>
 </section>
 
 
-<footer class=" mt-32 py-12">
-  <div class="max-w-6xl mx-auto ">
+<footer class=" mt-12 py-12 px-12">
+  <div class="max-w-6xl mx-auto flex flex-col gap-6">
 
     <!-- Top Footer -->
-    <div class="flex items-center justify-between mb-6">
-
+    <div class="flex flex-col gap-6 sm:flex-row mb-6 justify-between ">
+    <div class=" flex flex-col gap-6 sm:gap-12">
       <!-- Logo -->
       <div class="">
         <img class="h-[23px]" src="./image/Logo.png" alt="">
@@ -401,9 +429,10 @@
       <div class="text-gray-500 text-sm">
         © 2020 Epixelab. All rights reserved.
       </div>
+    </div>
 
       <!-- Menu -->
-      <ul class="flex gap-8 text-gray-600 text-sm">
+      <ul class="flex flex-col sm:flex-row gap-2 sm:gap-6 text-gray-600 text-sm">
         <li><a href="#" class="hover:text-black">Portfolio</a></li>
         <li><a href="#" class="hover:text-black">How it Works</a></li>
         <li><a href="#" class="hover:text-black">Pricing</a></li>
